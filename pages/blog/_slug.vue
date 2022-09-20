@@ -1,18 +1,15 @@
 <template>
     <article class="relative max-w-3xl mx-auto justify-center mb-10 md:mb-10">
       <header class="flex flex-col item-start text-base justify-center text-center mt-1 mb-7">
-        <span class="text-base md:text-base text-gray-400 mb-2">{{ article.category }}</span>
-        <!--
-        <p class="text-sm md:text-base text-gray-400 text-center mb-2">
-          <span class="py-1 px-2 rounded-lg bg-gray-100 hover:drop-shadow">
-            {{ article.category }}
-          </span>
-        </p>
-        -->
+        <nuxt-link :to="{path: '/computer-architecture'}" replace>
+          <span class="text-base md:text-base text-gray-400 mb-2 hover:drop-shadow ">{{ article.category }}</span>
+        </nuxt-link>
         <h1 class="px-5 md:px-0 mt-1 mb-5 text-2xl md:text-3xl text-center font-bold text-gray-700 break-all">
           {{ article.title }}
         </h1>
         <p class="text-base md:text-base text-gray-500 text-center">{{article.datetime}} by {{article.author}}</p>
+
+        
       </header>
       <div class="p-4 grid grid-cols-3 gap-4">
         <div class="prose lg:prose-lg col-span-2">
