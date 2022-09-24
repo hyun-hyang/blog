@@ -1,6 +1,5 @@
 ---
 title: 컴퓨터구조 1장
-description: 컴퓨터구조 1장입니다.
 slug: my-first-blog-post
 author: 임지민
 category: Computer Architecture
@@ -9,12 +8,23 @@ language: Korean
 featured: Featured
 tags:
   - study
+description: 컴퓨터구조 1장입니다.
 ---
 
-## My first blog post
+# 컴퓨터구조 1장
+
+### My first blog post
 
 Welcome to my first blog post using content module.
 
-## Hello It's me
+|   |   |   |   |
+| - | - | - | - |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+###
+
+### Hello It's me
 
 Hi world!
