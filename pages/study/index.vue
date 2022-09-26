@@ -8,13 +8,13 @@
           나의 공부 기록
         </p>
       </header>
-      <div class="px-5">
+      <div class="border-b border-gray-300 py-7 px-5">
           <div class="pt-10 md:pt-12 text-xl md:text-2xl text-cherry font-semibold mb-2">2022-2학기</div>
           <div class="text-gray-600 font-normal text-sm md:text-base">과목별로 학과 공부의 수업내용을 정리해두었습니다. 주로 CS지식들을 담고 있습니다.</div>
       </div>
       
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
+      <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
         <div v-for='study of studies' :key="study" >
           <nuxt-link :to='`study/${study.slug}/0-1`'>
             <div class="group" >
@@ -54,7 +54,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Some of Projects developed by JiMin Lim",
+        content: "Study Log",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

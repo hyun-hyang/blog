@@ -1,5 +1,14 @@
 <template>
     <div class="max-w-6xl mx-auto">
+      <header class="pt-6 pb-9 sm:pb-16 text-center">
+        <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold">
+          Blog
+        </h1>
+        <p class="text-lg text-slate-600">
+          나의 글 모음들
+        </p>
+      </header>
+
       <div class="px-5">
           <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">모든 글보기</div>
           <div class="text-gray-600 font-normal text-sm md:text-base">블로그의 모든 글 모음입니다. 주제별로 글을 보고 싶다면 아래 태그를 선택해주세요.</div>
