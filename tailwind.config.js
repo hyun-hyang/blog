@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./assets/**/*.{html,js}",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -28,24 +29,24 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 0.5s ease-in-out infinite'
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            h1: {
-              color: '#374151',
-            },
-            h2: {
-              color: '#374151',
-            },
-            h3: {
-              color: '#374151',
-            },
-            h4: {
-              color: '#374151',
-            },
-          }
-        }
-      }),
+      // typography: (theme) => ({
+      //   DEFAULT: {
+      //     // css: {
+      //     //   h1: {
+      //     //     color: '#374151',
+      //     //   },
+      //     //   h2: {
+      //     //     color: '#374151',
+      //     //   },
+      //     //   h3: {
+      //     //     color: '#374151',
+      //     //   },
+      //     //   h4: {
+      //     //     color: '#374151',
+      //     //   },
+      //     // }
+      //   }
+      // }),
     },
   },
   plugins: [

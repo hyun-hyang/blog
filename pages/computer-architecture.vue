@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <div class="px-5">
           <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">컴퓨터구조</div>
           <div class="text-gray-600 font-normal text-sm md:text-base">컴퓨터구조 과목을 정리한 글 모음입니다.</div>
@@ -30,7 +30,7 @@
 <script>
 export default {
     async asyncData({ $content, params }) {
-      const articles = await $content('blog', params.slug)
+      const articles = await $content('computer-architecture', params.slug)
         .where({category: 'Computer Architecture'})
         .sortBy("datetime", "desc")
         .fetch();
