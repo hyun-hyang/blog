@@ -1,7 +1,7 @@
 <template>
   <div class="flex border-t border-gray-300">
   
-      <div class="hidden md:block min-w-fit max-w-max py-10 px-4 md:-pr-2 border-r border-gray-300 min-h-screen">
+      <div class="hidden md:block w-[32rem] py-10 px-4 md:-pr-2 border-r border-gray-300 min-h-screen">
   
           <div class="font-semibold text-slate-600 text-xl mb-4">{{currilist[0]["name"]}}</div>
   
@@ -169,7 +169,7 @@
           return { curriname, currilist, prev, next, currititle, curriculumName, cats, lists}
       },
       head: {
-      title: "MinJun Choi | Study",
+      title: "JiMin | Study",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },

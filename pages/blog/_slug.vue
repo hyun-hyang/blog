@@ -13,7 +13,7 @@
       </header>
       <div class="p-4 grid grid-cols-3 gap-4">
         <div class="prose lg:prose-lg col-span-2">
-          <nuxt-content :document="article" class="prose max-w-3xl custom-text px-6 selection:bg-cherrylight" />
+          <nuxt-content :document="article" class="prose max-w-5xl custom-text selection:bg-cherrylight" />
           <div class="space-x-2 flex-1 mt-7 mb-3 px-6">
             <div class="inline-flex text-gray-700 text-xs md:text-base">Tags:</div>
             <div v-for="tag in article.tags" :key="{tag}" 
