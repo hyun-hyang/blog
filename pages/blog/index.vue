@@ -9,7 +9,7 @@
         <nuxt-link :to="{path: '/computer-architecture'}" replace><span class="tag-btn">#<span class="text-gray-600 text-sm">컴퓨터구조</span></span></nuxt-link>
       </div>
 
-      <div class="max-w-4xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
+      <div class="max-w-6xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 rounded-xl shadow-md overflow-hidden md:max-w-6xl">
           <div class="px-5 md:px-6 group" v-for="article of articles" :key="article">
             <nuxt-link :to='`/blog/${article.slug}`'>
                 <div class="article-inner flex justify-between border-t py-6 border-gray-200">
