@@ -14,27 +14,32 @@
       </div>
       
 
-      <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
-        <div v-for='study of studies' :key="study" >
-          <nuxt-link :to='`study/${study.slug}/0-1`'>
-            <div class="group" >
-              <div >
-                <div class=" mb-1.5 flex items-center keep-all" >
-                  <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{study.name}}</div> 
-                  <div class="flex items-center ">
-                      <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">공부 완료</div> 
-                      <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
-                      <div v-else > </div> 
+      <!-- <div class="max-w-2xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 rounded-xl shadow-md overflow-hidden md:max-w-2xl"> -->
+    <!-- <div class="max-w-2xl mt-11 mb-8 rounded-xl shadow-md"> -->
+        <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
+          <div v-for='study of studies' :key="study" >
+            <nuxt-link :to='`study/${study.slug}/0-1`'>
+              <div class="group" >
+                <div class=" grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
+                  <div class=" mb-1.5 flex items-center keep-all" >
+                    <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{study.name}}</div> 
+                    <div class="flex items-center ">
+                        <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">공부 완료</div> 
+                        <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
+                        <div v-else > </div> 
+                    </div>
                   </div>
+                  
+                  <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
                 </div>
-                
-                <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
               </div>
-            </div>
-          </nuxt-link>
+            </nuxt-link>
+          </div>
         </div>
-      </div>
-    </div>
+        </div>
+
+    
+    
 </template>
 
 <script>
@@ -69,9 +74,6 @@ export default {
 .inner {
   box-sizing: border-box;
   position: relative;
-}
-.keep-all {
-  word-break: keep-all;
 }
 .lead-box {
     overflow: hidden;

@@ -1,5 +1,5 @@
 <template>
-    <article class="relative max-w-6xl mx-auto  mb-10 md:mb-10">
+    <article class="relative max-w-6xl mx-auto justify-center mb-10 md:mb-10">
       <header class="flex flex-col item-start text-base justify-center text-center mt-1 mb-7">
         <nuxt-link :to="{path: '/computer-architecture'}" replace>
           <span class="text-base md:text-base text-gray-400 mb-2 hover:drop-shadow ">{{ article.category }}</span>
