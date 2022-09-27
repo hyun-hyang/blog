@@ -18,12 +18,22 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { 
+        rel: 'icon', 
+        type: 'image/x-icon', 
+        href: '/favicon.ico' 
+      },
+      {
+        type: 'text/css',
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@/assets/css/katex.min.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -46,7 +56,12 @@ export default {
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    markdown: {
+      remarkPlugins: ['remark-math', 'remark-textr'],
+      rehypePlugins: ['rehype-katex']
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
