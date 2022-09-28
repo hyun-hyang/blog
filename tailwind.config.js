@@ -29,6 +29,9 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 0.5s ease-in-out infinite'
       },
+      spacing: {
+        '128': '32rem',
+      }
       // typography: (theme) => ({
       //   DEFAULT: {
       //     // css: {
