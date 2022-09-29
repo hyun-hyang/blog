@@ -59,8 +59,20 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
+  },
+  head: {
+    title: 'Home page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
   }
+  
 }
+
 </script>
 
 <style scoped>
