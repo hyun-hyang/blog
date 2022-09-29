@@ -18,7 +18,7 @@
     </div>
 
     <div class="px-5 pt-10">
-      <nuxt-link :to="{path: '/computer-architecture'}" replace><span class="tag-btn">#<span class="text-gray-600 text-sm">컴퓨터구조</span></span></nuxt-link>
+      <nuxt-link :to="{path: '/essay'}" replace><span class="tag-btn">#<span class="text-gray-600 text-sm"> essay</span></span></nuxt-link>
     </div>
 
     <div class="max-w-4xl grid grid-cols-1 md:grid-cols-1 mt-5 md:mt-6 mb-8 md:mb-12">
