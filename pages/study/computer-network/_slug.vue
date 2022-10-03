@@ -169,14 +169,14 @@ async asyncData({ $content, params }) {
         return { curriname, currilist, prev, next, currititle, curriculumName, cats, lists}
     },
     head: {
-    title: "MinJun Choi | Study",
+    title: "JiMin Lim | Study",
     meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
         hid: "description",
         name: "description",
-        content: "Its MinJun Choi's Pen and Paper to write ",
+        content: "Study~ ",
         },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

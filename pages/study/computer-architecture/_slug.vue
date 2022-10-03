@@ -176,7 +176,7 @@
         {
           hid: "description",
           name: "description",
-          content: "Its MinJun Choi's Pen and Paper to write ",
+          content: "Study~ ",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

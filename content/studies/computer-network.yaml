@@ -4,7 +4,9 @@ slug: computer-network
 order: 2
 category: [
   "0. Intro", 
-  "1. Foundation",
-  "2. Getting connected",
+  "1. 기본 개념",
+  "2. 데이터 링크 네트워크 (Data Link Networks)",
+  "3. 패킷스위칭(Packet Switching)",
+  "4. 인터네트워킹 (Internetworking)"
   ]
 state: '공부 중'

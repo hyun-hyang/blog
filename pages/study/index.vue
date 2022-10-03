@@ -14,8 +14,6 @@
       </div>
       
 
-      <!-- <div class="max-w-2xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 rounded-xl shadow-md overflow-hidden md:max-w-2xl"> -->
-    <!-- <div class="max-w-2xl mt-11 mb-8 rounded-xl shadow-md"> -->
         <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
           <div v-for='study of studies' :key="study" >
             <nuxt-link :to='`study/${study.slug}/0-1`'>
