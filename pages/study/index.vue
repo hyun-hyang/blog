@@ -18,7 +18,7 @@
           <div v-for='study of studies' :key="study" >
             <nuxt-link :to='`study/${study.slug}/0-1`'>
               <div class="group" >
-                <div class=" grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
+                <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
                   <div class=" mb-1.5 flex items-center keep-all" >
                     <div class="text-slate-600 text-xl font-semibold group-hover:text-violet-500 transition duration-200 logo">{{study.name}}</div> 
                     <div class="flex items-center ">
