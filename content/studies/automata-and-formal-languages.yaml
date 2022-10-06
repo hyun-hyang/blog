@@ -1,0 +1,13 @@
+name: '오토마타와형식언어'
+description: ''
+slug: automata-and-formal-languages
+order: 1
+category: [
+  "0. Intro",
+  "1. Introduction to the theory of computation",
+  "2. Finite automata",
+  "3. Regular languages",
+  "4. Properties of Regular languages",
+
+  ]
+state: '0주차'
