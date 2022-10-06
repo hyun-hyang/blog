@@ -1,5 +1,5 @@
 name: '오토마타와형식언어'
-description: ''
+description: '컴퓨터학의 기초 계산 모델인 오토마타의 종류와 그들의 기능을 배우고, 형식언어의 종류의 그들의 성질을 공부합니다.'
 slug: automata-and-formal-languages
 order: 1
 category: [
