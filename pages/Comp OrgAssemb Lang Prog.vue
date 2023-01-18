@@ -1,25 +1,11 @@
 <template>
     <div class="max-w-6xl mx-auto">
-      <header class="pt-6 pb-9 sm:pb-16 text-center">
-        <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold">
-          Blog
-        </h1>
-        <p class="text-lg text-slate-600">
-          나의 글 모음들
-        </p>
-      </header>
-
       <div class="px-5">
-          <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">모든 글보기</div>
-          <div class="text-gray-600 font-normal text-sm md:text-base">블로그의 모든 글 모음입니다. 주제별로 글을 보고 싶다면 아래 태그를 선택해주세요.</div>
+          <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">Comp OrgAssemb Lang Prog</div>
+          <div class="text-gray-600 font-normal text-sm md:text-base">2023-1에 배우고있는 CS 전공과목입니다.  </div>
       </div>
   
-      <div class="px-5 pt-10">
-        <nuxt-link :to="{path: '/essay'}" replace><span class="tag-btn">#<span class="text-gray-600 text-sm"> essay</span></span></nuxt-link>
-        <nuxt-link :to="{path: '/Comp OrgAssemb Lang Prog'}" replace><span class="tag-btn">#<span class="text-gray-600 text-sm"> Comp OrgAssemb Lang Prog</span></span></nuxt-link>
-      </div>
-
-      <div class="max-w-6xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 rounded-xl shadow-md overflow-hidden md:max-w-6xl">
+      <div class="max-w-4xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12">
           <div class="px-5 md:px-6 group" v-for="article of articles" :key="article">
             <nuxt-link :to='`/blog/${article.slug}`'>
                 <div class="article-inner flex justify-between border-t py-6 border-gray-200">
@@ -45,17 +31,31 @@
 export default {
     async asyncData({ $content, params }) {
       const articles = await $content('blog', params.slug)
+        .where({category: 'Comp OrgAssemb Lang Prog'})
         .sortBy("datetime", "desc")
         .fetch();
       return {
         articles
       }
     },
+    head: {
+      title: 'Comp OrgAssemb Lang Prog | Articles',
+      htmlAttrs: {
+        lang: 'ko'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: "Jimin's Blog" },
+        { name: 'format-detection', content: 'telephone=no' }
+      ]
+    },
 }
 </script>
+  
 
 <style scoped>
-    .custom-text{
-        word-break: keep-all;
-    }
-</style>    
+.custom-text{
+    word-break: keep-all;
+}
+</style>
