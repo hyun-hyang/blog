@@ -1,7 +1,7 @@
 <template>
     <div class="max-w-6xl mx-auto">
       <div class="px-5">
-          <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">Comp OrgAssemb Lang Prog</div>
+          <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">Operating Systems</div>
           <div class="text-gray-600 font-normal text-sm md:text-base">2023-1에 배우고있는 CS 전공과목입니다.  </div>
       </div>
   
@@ -31,7 +31,7 @@
 export default {
     async asyncData({ $content, params }) {
       const articles = await $content('blog', params.slug)
-        .where({category: 'Comp OrgAssemb Lang Prog'})
+        .where({category: 'Comp Org/Assemb Lang Prog'})
         .sortBy("datetime", "desc")
         .fetch();
       return {
