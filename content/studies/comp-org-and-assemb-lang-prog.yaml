@@ -1,0 +1,10 @@
+name: 'CSC-3410 - Comp Org/Assemb Lang Prog'
+description: 'Computer organization and architecture; machine language; and assembly language programming techniques.'
+slug: comp-org-and-assemb-lang-prog
+order: 1
+category: [
+  "0. Intro",
+
+
+  ]
+state: '0주차'

@@ -143,7 +143,7 @@
             });
         },
     async asyncData({ $content, params }) {
-            const curriculumName = 'automata-and-formal-languages';
+            const curriculumName = 'data-mining-machine-learning';
             const curriname = await $content(curriculumName, params.slug)
             .fetch();
             const currilist = await $content('studies')

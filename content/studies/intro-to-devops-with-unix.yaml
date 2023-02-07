@@ -1,0 +1,10 @@
+name: 'CSC-2510 - Intro to DevOps with Unix'
+description: ''
+slug: intro-to-devops-with-unix
+order: 1
+category: [
+  "0. Intro",
+  "1. Supervised Learning Linear Regression"
+
+  ]
+state: '0주차'

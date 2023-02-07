@@ -1,0 +1,10 @@
+name: 'CSC-4220 - Data Mining/Machine Learning'
+description: ''
+slug: data-mining-machine-learning
+order: 1
+category: [
+  "0. Intro",
+  "1. Supervised Learning Linear Regression"
+
+  ]
+state: '0주차'
