@@ -16,26 +16,24 @@
         </div>
 
         <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
-          <div v-for='study of studies' :key="study" >
-
-            <nuxt-link :to='`study/${study.slug}/0-1`'>
-              <div class="group" >
-                <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
-
-                  <div class=" mb-1.5 flex items-center keep-all" >
-                    <div class="text-slate-600 text-xl font-semibold group-hover:text-violet-500 transition duration-200 logo">{{study.name}}</div> 
-                    <div class="flex items-center ">
-                        <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-indigo-400 rounded font-normal">공부 완료</div> 
-                        <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
-                        <div v-else class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal"> {{study.state}} </div> 
-                    </div>
-                  </div>
-                  <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
+          <div v-for='study of studies' :key="study"  >
+              <nuxt-link :to='`study/${study.slug}/0-1`'>
+                <div class="group" >
                   
+                  <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
+                    <div class=" mb-1.5 flex items-center keep-all" >
+                      <div class="text-slate-600 text-xl font-semibold group-hover:text-violet-500 transition duration-200 logo">{{study.name}}</div> 
+                      <div class="flex items-center ">
+                          <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-indigo-400 rounded font-normal">공부 완료</div> 
+                          <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
+                          <div v-else class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal"> {{study.state}} </div> 
+                      </div>
+                    </div>
+                    <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
+                    
+                  </div>
                 </div>
-              </div>
-            </nuxt-link>
-
+              </nuxt-link>
           </div>
         </div>
       </div>
@@ -48,25 +46,25 @@
 
         <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
           <div v-for='study of studies' :key="study" >
+            <div v-if="`${study.visibility}` == 'false'">
+              <nuxt-link :to='`study/${study.slug}/0-1`'>
+                <div class="group" >
+                  <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
 
-            <nuxt-link :to='`study/${study.slug}/0-1`'>
-              <div class="group" >
-                <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
-
-                  <div class=" mb-1.5 flex items-center keep-all" >
-                    <div class="text-slate-600 text-xl font-semibold group-hover:text-violet-500 transition duration-200 logo">{{study.name}}</div> 
-                    <div class="flex items-center ">
-                        <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-indigo-400 rounded font-normal">공부 완료</div> 
-                        <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
-                        <div v-else class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal"> {{study.state}} </div> 
+                    <div class=" mb-1.5 flex items-center keep-all" >
+                      <div class="text-slate-600 text-xl font-semibold group-hover:text-violet-500 transition duration-200 logo">{{study.name}}</div> 
+                      <div class="flex items-center ">
+                          <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-indigo-400 rounded font-normal">공부 완료</div> 
+                          <div v-else-if="`${study.state}` == '공부 중'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal">공부 중</div> 
+                          <div v-else class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-rose-400 rounded font-normal"> {{study.state}} </div> 
+                      </div>
                     </div>
+                    <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
+                    
                   </div>
-                  <div class="keep-all text-slate-500 mb-1.5">{{study.description}}</div>
-                  
                 </div>
-              </div>
-            </nuxt-link>
-
+              </nuxt-link>
+            </div>
           </div>
         </div>
 
@@ -84,11 +82,13 @@
 export default {
     async asyncData({ $content, params }) {
         const studies = await $content('studies', params.id)
+        .where({"visibility": true})
         .sortBy('order', 'asc')
         .fetch();
-        return { studies }
-        
+        return { studies }       
+         
     },
+    
     name: 'PageIndex',
     head: {
     title: "JiMin Lim | Study",

@@ -5,3 +5,4 @@ order: 2
 category: [
   ]
 state: '공부 중'
+visibility: false
