@@ -1,6 +1,5 @@
 <template>
     <header class="sticky top-0 z-50 w-full px-6 py-5 bg-white">
-        <meta name="naver-site-verification" content="f9dc32d6d7a36dbb7af93b1f25d47c6acebfba40" />
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div class="max-w-fit ml-1.5 md:ml-0 hover:animate-wiggle hover:drop-shadow">
                 <nuxt-link to="/">
