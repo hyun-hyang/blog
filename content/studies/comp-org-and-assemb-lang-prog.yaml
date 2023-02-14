@@ -4,8 +4,10 @@ slug: comp-org-and-assemb-lang-prog
 order: 1
 category: [
   "0. Intro",
-
-
+  "1. What is assembly Language?",
+  "2. Memory Segments and Registers",
+  "3. Linux System Calls",
+  "4. Addressing and Instructions"
   ]
 state: '0주차'
 visibility: true
