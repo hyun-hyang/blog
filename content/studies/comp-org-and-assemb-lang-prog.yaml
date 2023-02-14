@@ -6,8 +6,7 @@ category: [
   "0. Intro",
   "1. What is assembly Language?",
   "2. Memory Segments and Registers",
-  "3. Linux System Calls",
-  "4. Addressing and Instructions"
+  "3. Not Variables and Not Constants",
   ]
 state: '0주차'
 visibility: true
