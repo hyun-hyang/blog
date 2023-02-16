@@ -1,5 +1,5 @@
 name: 'CSC-2510 - Intro to DevOps with Unix'
-description: ''
+description: 'terminology, processes, and techniques with an emphasis on development procedures for systems programming and management, and automated provisioning.'
 slug: intro-to-devops-with-unix
 order: 1
 category: [
