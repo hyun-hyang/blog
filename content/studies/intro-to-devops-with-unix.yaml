@@ -4,8 +4,11 @@ slug: intro-to-devops-with-unix
 order: 1
 category: [
   "0. Intro",
-  "1. Supervised Learning Linear Regression"
-
+  "1. What is Devops and Intro to Unix",
+  "2. Unix ",
+  "3. Agile and More Unix",
+  "4. I/O, Functions, Case",
+  "5. CLI Continued"
   ]
 state: '0주차'
 visibility: true
