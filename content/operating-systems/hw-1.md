@@ -1,8 +1,8 @@
 ---
-title: 
-date: 
+title: assignment 1
+date: 2023.02.24
 slug: hw-1
-category: Homework assignment 1
+category: Homework
 ---
 
 
