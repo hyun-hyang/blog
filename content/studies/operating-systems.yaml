@@ -1,7 +1,7 @@
 name: 'CSC-4100 - Operating Systems'
 description: 'A historical perspective of operating systems; overview of modern systems; processor, storage, and process management; virtual memory; deadlocks; concurrent processing and programming; protection; and case studies.
 '
-slug: opearting-systems
+slug: operating-systems
 order: 1
 category: [
   "0. Intro",
