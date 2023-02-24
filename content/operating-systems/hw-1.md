@@ -1,10 +1,9 @@
 ---
 title: Intro
 date: 
-slug: 0-1
+slug: hw-1
 category: Homework assignment 1
 ---
-
 
 
 ## Various Topics from Programming Assignments
