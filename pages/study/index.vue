@@ -46,7 +46,7 @@
 
         <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5">
           <div v-for='study of studies' :key="study" >
-            <div v-if="`${study.visibility}` == 'false'">
+            <div v-if="`${study.visibility}` == 'true'">
               <nuxt-link :to='`study/${study.slug}/0-1`'>
                 <div class="group" >
                   <div class="h-40 grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12 px-5 py-5 rounded-xl shadow-md overflow-hidden">
