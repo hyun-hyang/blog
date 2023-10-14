@@ -33,9 +33,9 @@
         </div>
         </div>
 
-        <div class="relative h-32 w-32 ...">
-          <div class="absolute inset-y-0 right-0 w-16 ...">06</div>
-        </div>
+        //<div class="relative h-32 w-32 ...">
+          //<div class="absolute inset-y-0 right-0 w-16 ...">06</div>
+        //</div>
 
 
         <aside ref="toc" class="lg:flex lg:flex-col">
