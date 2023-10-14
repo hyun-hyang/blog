@@ -14,7 +14,7 @@ description: 중대신문 기고문, 오피니언 > 나도 한마디
 
 <a href="http://news.cauon.net/news/articleView.html?idxno=37008" target="_blank">
     <center>
-        <img src="/blog/newspaper/subnail.png" width="800">
+        <img src="/static/blog/newspaper/subnail.png" width="800">
         중대신문 기고문
     </center>
 </a>
