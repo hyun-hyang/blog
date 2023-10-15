@@ -23,11 +23,11 @@
                             <nuxt-link :to="{path: '/about'}" replace class="text-gray-700 text-sm md:text-base hover:text-cherry poppins">About</nuxt-link>
                         </div>
                     </li>
-                    //<li>
-                        //<div class="py-1 px-2 rounded-lg">
-                            //<nuxt-link :to="{path: '/notion'}" replace class="text-gray-700 text-sm md:text-base hover:text-cherry poppins">Notion</nuxt-link>
-                        //</div>
-                   // </li>
+                    <li>
+                        <div class="py-1 px-2 rounded-lg">
+                            <nuxt-link :to="{path: '/notion'}" replace class="text-gray-700 text-sm md:text-base hover:text-cherry poppins">Notion</nuxt-link>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
